@@ -1,12 +1,12 @@
+body {
+	background-color: #f8fafc;
+}
+
 .bodyContainer {
 	background-color: #f8fafc;
-	display: grid;
-	grid-template-columns: 299px 374px 408px;
-	justify-items: stretch;
-	align-items: stretch;
-	column-gap: 130px;
-	row-gap: 0px;
+	display: flex;
 	padding-bottom: 150px;
+	width: 100%;
 }
 
 .productContainer {
@@ -14,7 +14,7 @@
 	text-align: center;
 	width: 299px;
 	height: 309px;
-	margin-left: 120px;
+	margin-left: 0px;
 	border-radius: 30px;
 	box-shadow: #00000017 0px 0px 20px;
 	margin-top: 20px;
@@ -37,7 +37,7 @@
 .productDetailsContainer {
 	text-align: left;
 	margin-top: 20px;
-	margin-left: 30px;
+	margin-left: 50px;
 	width: 374px;
 }
 
@@ -222,9 +222,9 @@ hr {
 .ml300 {
 	width: 66px;
 	height: 43px;
-	background-color: #ffffff;
 	position: absolute;
 	margin-left: 6px;
+	background-color: #f8fafc;
 }
 
 .cartButton {
@@ -257,7 +257,6 @@ hr {
 	font-size: 16px;
 	color: #8d9296;
 	margin-left: 20px;
-	/* margin-bottom: 150px; */
 }
 
 .card {
@@ -268,7 +267,7 @@ hr {
 	background-color: #ffffff;
 	box-shadow: 0px 15px 60px #00000014;
 	margin-top: 20px;
-	margin-left: 40px;
+	margin-left: 80px;
 }
 
 .cardHeader {
@@ -456,7 +455,7 @@ hr {
 	width: 408px;
 	height: 60px;
 	border-radius: 0px 0px 18px 18px;
-	margin-top: 32px;
+	margin-top: 34px;
 	display: flex;
 	justify-content: center;
 	padding: 25px 0;
@@ -472,34 +471,38 @@ hr {
 	text-align: center;
 }
 
-.arrowNextContainer {
+.arrownextContainer {
 	display: flex;
 }
 
-.arrowNext {
+.arrownext {
 	width: 18px;
 	height: 12px;
+	margin-bottom: 20px;
 }
 
 .placeText {
-	width: 224px;
-	height: 19px;
+	width: fit-content;
+	height: auto;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 15px;
-	color: #8d9296;
-	margin-top: 20px;
-	margin-left: 130px;
+	color: #868686;
+	margin-top: 10px;
+	margin-left: 155px;
 }
 
 /* For mobile devices */
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
 	.bodyContainer {
 		background-color: #fcece0;
 		display: flex;
 		flex-direction: column;
 		padding-bottom: 20px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 	.productContainer {
@@ -566,26 +569,96 @@ hr {
 	}
 
 	.card {
-		width: 408px;
-		height: 442px;
+		width: auto;
 		border: #e2dcd9;
 		border-radius: 18px;
 		background-color: #ffffff;
 		box-shadow: 0px 15px 60px #00000014;
-		margin: 14px 10px;
+		margin: 10px 0px;
 	}
 
 	.cardListCheckout {
 		margin-top: 34px;
+		width: auto;
 	}
 
-	.checkout {
-		font-size: 16px;
+	.listPrice {
+		margin-left: 30px;
 	}
 
 	.placeText {
 		width: 100%;
-		font-size: 14px;
+		font-size: 12px;
 		margin-left: 80px;
+		margin-top: 0;
+	}
+
+	.checkout {
+		padding-left: 20px;
+	}
+
+	.arrownextContainer {
+		display: flex;
+		margin-right: 20px;
+	}
+
+	.arrownext {
+		width: 18px;
+		height: 12px;
+	}
+
+	.placeText {
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.myCartHeading {
+		width: 70px;
+	}
+
+	.coloredDiv p {
+		margin-top: 5px;
+	}
+
+	.itemRemovedText {
+		margin-left: 70px;
+	}
+
+	.cartButton {
+		width: 148px;
+		font-size: 14px;
+		margin-left: 26px;
+	}
+
+	.buyButton {
+		width: 148px;
+	}
+	.productVariantsContainer {
+		display: flex;
+		gap: 5px;
+		margin-bottom: 40px;
+		width: fit-content;
+		margin-left: 0px;
+	}
+
+	hr {
+		width: 100%;
+		height: 1px;
+		color: black;
+		margin: 0;
+		padding: 0;
+	}
+
+	.productDetailsContainer {
+		text-align: left;
+		margin-top: 20px;
+		margin-left: 0px;
+		padding: 12px;
+		width: 100%;
+	}
+
+	.ml300 {
+		background-color: #fcece0;
 	}
 }

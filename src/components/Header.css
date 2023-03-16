@@ -1,3 +1,6 @@
+#header {
+	width: 100%;
+}
 /* first nav bar */
 
 .firstNavbar {
@@ -27,6 +30,11 @@
 	padding-top: 16px;
 	padding-bottom: 16px;
 	position: relative;
+}
+
+.navbar-brand {
+	width: fit-content;
+	margin: 0;
 }
 
 .main-navbar .top-navbar .nav-link {
@@ -175,10 +183,12 @@
 
 /* Third Nav bar */
 
-.thirdNavbar {
+#thirdNavbar {
 	background-color: white;
 	height: 60px;
 	padding-left: 380px;
+	width: 100%;
+	margin: 0;
 }
 .navbar .nav-item .nav-link {
 	color: #17222d;
@@ -207,7 +217,10 @@
 
 /* For mobile devices */
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
+	body {
+		overflow-x: hidden;
+	}
 	.firstNavbar {
 		display: none;
 	}
@@ -220,20 +233,20 @@
 		display: none;
 	}
 
-	.thirdNavbar {
+	#thirdNavbar {
 		background-color: #fed7b4;
 		height: 60px;
-		padding-left: 0px;
+		padding: 0px;
+		margin: 0;
 		position: fixed;
 		top: 0;
-		width: 100%;
 		z-index: 2;
 	}
 
 	#thirdNavbarLogo {
 		width: 100px;
 		height: 38px;
-		display: flex;
+		display: inline;
 	}
 
 	#linkAll {
@@ -267,14 +280,4 @@
 		font-size: 14px;
 		font-weight: 400;
 	}
-}
-
-/* For tablet devices */
-@media (min-width: 768px) and (max-width: 991px) {
-	/* styles for tablet devices */
-}
-
-/* For desktop devices */
-@media (min-width: 992px) {
-	/* styles for desktop devices */
 }

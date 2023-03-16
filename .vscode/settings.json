@@ -1,14 +1,10 @@
 {
-  "cSpell.words": [
-    "ghar",
-    "gharpar",
-    "Muzammil"
-  ],
-  "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#042c5174",
-    "editor.lineHighlightBorder": "#2d585b7e",
-    "activityBar.background": "#490371",
-    "titleBar.activeBackground": "#66059E",
-    "titleBar.activeForeground": "#FDFBFF"
-  }
+	"cSpell.words": ["arrownext", "ghar", "gharpar", "Muzammil"],
+	"workbench.colorCustomizations": {
+		"editor.lineHighlightBackground": "#042c5174",
+		"editor.lineHighlightBorder": "#2d585b7e",
+		"activityBar.background": "#490371",
+		"titleBar.activeBackground": "#66059E",
+		"titleBar.activeForeground": "#FDFBFF"
+	}
 }

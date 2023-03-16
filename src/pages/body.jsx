@@ -1,9 +1,10 @@
 import "./body.css";
 import Card from "react-bootstrap/Card";
+import { Container } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
 import mainProductBg1 from "../images/mainProductBg1.png";
 import mainProduct1 from "../images/mainProduct1.png";
-import arrowNext from "../images/arrownext.png";
+import arrownext from "../images/arrownext.png";
 import cardListImage2 from "../images/cardListImage2.png";
 import cardListImage3 from "../images/cardListImage3.png";
 import downArrowBlack from "../images/downArrowBlack.png";
@@ -16,7 +17,7 @@ import removeIcon from "../images/removeIcon.svg";
 export default function Body() {
 	return (
 		<>
-			<div className="bodyContainer">
+			<Container className="bodyContainer">
 				<div className="productContainer">
 					<img src={mainProductBg1} alt="product" className="mainProductBg1" />
 					<img src={mainProduct1} alt="product" className="mainProduct1" />
@@ -93,8 +94,9 @@ export default function Body() {
 					<button className="cartButton">Add to Cart</button>
 					<button className="buyButton">Buy Now</button>
 				</div>
-				<div className="content">
-					<Card className="card">
+				{/* <div className="content"> */}
+				<Container>
+					<Card className="card ">
 						<div className="cardHeader">
 							<p className="myCartHeading">MY CART</p>
 							<div className="coloredDiv">
@@ -226,13 +228,13 @@ export default function Body() {
 						<div className="cardListCheckout">
 							<p className="checkout">Checkout - Rs. 9600</p>
 							<div className="arrowNextContainer">
-								<img src={arrowNext} alt="arrow next" className="arrowNext" />
+								<img src={arrownext} alt="arrow next" className="arrownext" />
 							</div>
 						</div>
 					</Card>
 					<p className="placeText">Place your minimum order of Rs. 1200</p>
-				</div>
-			</div>
+				</Container>
+			</Container>
 		</>
 	);
 }

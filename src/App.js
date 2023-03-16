@@ -4,13 +4,13 @@ import Body from "./pages/body.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Body />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<Body />
+			<Footer />
+		</>
+	);
 }
 
 export default App;
